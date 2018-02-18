@@ -1,5 +1,5 @@
 from distutils.core import setup
-import py2exe
+import pyinstaller
 setup(
     name='basic_calc',
     version='0.1',

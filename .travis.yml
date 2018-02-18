@@ -6,7 +6,7 @@ python:
   # PyPy versions
   - "pypy3.5"
 # command to install dependencies
-before_script:
+before_install:
   - easy_install distribute
   - pip install -r requirements.txt
 install:

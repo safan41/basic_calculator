@@ -1,4 +1,5 @@
 import subprocess
+import pytest
 text = input("What operation would you like to do? 1 = addition, 2 = subtraction, 3 = multiplication, 4 = division, 5 = root, 6 = exponents, factorial = 7, 8 = algebra (WIP) >")
 try:
   textint = int(text)

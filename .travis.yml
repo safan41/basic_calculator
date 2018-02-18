@@ -12,4 +12,4 @@ before_install:
 install:
   - pip install ./basic_calc
 # command to run tests
-script: pytest
+script: pytest basic_calc/basic_calc

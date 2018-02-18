@@ -1,5 +1,4 @@
 from distutils.core import setup
-import pyinstaller
 setup(
     name='basic_calc',
     version='0.1',

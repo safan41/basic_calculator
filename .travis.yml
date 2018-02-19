@@ -21,6 +21,6 @@ before_deploy:
       - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
-  api_key: 96fefb7ca473c8812adf0440677596235b0e53c8
+  api_key: $GITHUB_TOKEN
   file: dist
   skip_cleanup: true

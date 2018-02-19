@@ -14,13 +14,13 @@ install:
 # command to run tests
 script: 
 - cd basic_calc
- before_deploy:
+before_deploy:
       # Set up git user name and tag this commit
       - git config --local user.name "safan41"
       - git config --local user.email "safan25641@gmail.com"
       - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
-    deploy:
-      provider: releases
-      api_key: "96fefb7ca473c8812adf0440677596235b0e53c8"
-      file: "dist"
-      skip_cleanup: true
+deploy:
+  provider: releases
+  api_key: "96fefb7ca473c8812adf0440677596235b0e53c8"
+  file: "dist"
+  skip_cleanup: true
